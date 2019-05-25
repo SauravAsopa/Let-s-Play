@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$lets-play-app-primary: mat-palette($mat-blue-grey, 900);
+$lets-play-app-accent: mat-palette($mat-red, A200);
+
+$lets-play-app-warn: mat-palette($mat-red);
+
+$lets-play-app-theme: mat-light-theme($lets-play-app-primary, $lets-play-app-accent, $lets-play-app-warn);
+
+@include angular-material-theme($lets-play-app-theme);
